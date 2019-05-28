@@ -1,3 +1,4 @@
 # ml-proj
 Basic Machine Learning 
-A program in python which shows an implementation of 
+A programs in python which implement basic Machine Learning Algorithms and makes use of librarires such as Pandas, SCILAB.
+
