@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
-data = pd.read_csv("/home/amit/Downloads/student.csv")
+data = pd.read_csv("File Location")
 print ("The shape of the data is", data.shape)
 data.head()
 
@@ -12,9 +12,9 @@ def average(lst):
     return(sum(lst)/len(lst))
 
 #Getting the values
-mathval = data['Math'].values
-readval = data['Reading'].values
-writeval = data['Writing'].values
+mathval = data['X Label'].values
+readval = data['Y Label'].values
+writeval = data['Z Label'].values
 
 #Plotting the graph
 graph = plt.figure()
