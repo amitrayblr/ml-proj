@@ -2,12 +2,12 @@ import pandas as pd
 import numpy as nm
 import matplotlib.pyplot as plt
 
-data = pd.read_csv("/home/amit/Downloads/auto-mpg.csv")
+data = pd.read_csv("file location")
 print ("The shape of the data is", data.shape)
 data.head()
 
-X = data["horsepower"].values
-Y = data["mpg"].values
+X = data["X Label"].values
+Y = data["Y Label"].values
 
 #Plotting scatter plot for data
 plt.scatter(X, Y, marker = 'x', c = '#FF6347', label = "Scatter Plot")
@@ -43,8 +43,8 @@ plt.scatter(X, Y, marker = 'x', c = '#FF6347', label = "Scatter Plot")
 
 #Plotting best fit line
 plt.plot(x, y, c = '#008080', label = "Best Fit Line")
-plt.xlabel("Horsepower")
-plt.ylabel("Mpg")
+plt.xlabel("X Label")
+plt.ylabel("Y Label")
 plt.legend()
 plt.show()
 
@@ -66,6 +66,6 @@ for i in range(len(X)):
 coefdet = 1 - (resisum/totsum)
 print("The Coefficient of Determination is: ", coefdet)
 
-hp = int(input("Enter the horsepower of the vehicle: "))
+hp = int(input("Enter your input"))
 mpg = b0 + b1 * hp
-print("The expected mpg of the car is: ", mpg)
+print("The expected output is ", mpg)
